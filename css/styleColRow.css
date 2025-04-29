@@ -1,0 +1,106 @@
+/* grid-template-columns/rows */
+.grid-containerB {
+    width: 100%;
+    height: 650px;
+
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .8fr .25fr 4fr 1fr .8fr;
+}
+.itemB1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: blue;
+}
+.itemB2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(17, 17, 146);
+}
+/*-- Contenedor de section --*/
+.contenidoB-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    background-color: rgb(6, 6, 36);
+    display: grid;
+    
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.itemB3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(106, 106, 139);
+}
+.itemB4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(67, 67, 150);
+}
+.itemB5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(84, 84, 237);
+}
+/*--  --*/
+.itemB6 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(54, 54, 122);
+}.itemB7 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(85, 85, 138);
+}
+
+
+@media screen and (min-width: 720px) {
+    .grid-containerB {
+        width: 100%;
+        height: 650px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .8fr .25fr 3fr .8fr;
+    }
+    .itemB1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .itemB2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    /*-- Contenedor de section --*/
+    .contenidoB-container{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .itemB3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .itemB4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .itemB5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    /*--  --*/
+    .itemB6 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }.itemB7 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+}
